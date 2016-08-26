@@ -1,0 +1,230 @@
+html, body {
+    margin:0;
+    padding:0;
+    width:100%;
+    height:100%;
+    font-family: 'Muli', sans-serif;
+}
+
+}
+.wrapper{
+	width: 100%;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 0px;
+    text-align:center;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 8px;
+    text-decoration: none;
+    font-size: 30px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+    list-style-type: none;
+}
+
+.sidenav a:hover {
+    color: orange;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    cursor: pointer;
+}
+
+.sidenav .openbtn {
+	position: absolute;
+	display: inline-block;
+	font-size: 25px;
+	cursor: pointer;
+
+}
+.heroIMG {
+	height: 600px;
+}
+
+.heroIMGwrapper {
+	position: relative;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0, .1);//#000;
+}
+.heroIMG h1	{
+	position: absolute;
+	top: 50px;
+	left: 15px;
+	font-variant: small-caps;
+	letter-spacing: 15px;
+	font-size: 50px;
+	color: white;
+}
+
+.heroIMG img {
+	position: relative;
+	width: 100%;
+	height: 600px;
+	z-index: -1;
+}
+.essaysHeader {
+	height: 40px;
+	color: black;
+	font-size: 12px;
+	letter-spacing: 10px;
+	text-align: center;
+	text-transform: uppercase;
+}
+.fourEssays {
+	display: inline-block;
+	height: 225px;
+	color: black;
+}
+
+#col {
+	width: 50%;
+	float: left;
+	height: 225px;
+	text-align: center;
+}
+
+#col a {
+    width:100%;
+    height:auto;
+    display: inline;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 12px;
+}	
+
+
+.fourColumn {
+	display: inline-block;
+	height: 225px;
+}
+
+#column {
+	width: 25%;
+	float: left;
+	height: 225px;
+}
+
+#column img {
+    width:100%;
+    height:auto;
+    display: inline;
+}	
+
+.socialMedia {
+	display: inline-block;
+	height: 300px;
+	width: 100%
+}
+
+#socialMedia {
+	width: 50%;
+	float: left;
+	height: 300px;
+	display: inline-block;
+	padding-top: 100px;
+	padding-bottom: 30px;
+	text-align: center;
+}
+
+#socialMedia img  {
+	display: inline;
+	height: 85px;
+}	
+#socialMedia a{
+	text-decoration: none;
+	color: black;
+	display: inline;
+	font-size: 22px;
+}
+#socialMedia a:hover {
+	color: orange;
+}
+
+.games {
+	display: inline-block;
+	width: 100%;
+	height: 200px;
+}
+div.cell {
+  display: inline-block;
+  height: 25px;
+  width: 25px;
+}
+
+div.row {
+  height: 25px;
+}
+
+div.brick {
+  background-color: pink;
+}
+
+div.empty {
+  background-color: black;
+}
+
+div.coin {
+  background: url('coin.gif');
+  background-size: cover;
+}
+
+div.pacman {
+  background: url('pusheenright.gif');
+  background-size: cover;
+}
+
+div.gameboard {
+  display: inline-block;
+  background-color:white;
+  padding-left: 33.3%;
+  padding-bottom: 60px;
+}
+.gameheading {
+	padding-left: 30%;
+	font-size: 40px;
+}
+
+#directions p {
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.footer {
+	position: relative;
+	background: rgba(0,0,0, .6);//#000;
+	display: inline-block;
+	height: 225px;
+	color: white;
+	width: 100%;
+}
+.footercol {
+	display: inline-block;
+	width: 33%;
+	margin: 0;
+}
+
+.footer input {
+	display: block;
+	padding: 5px;
+}
