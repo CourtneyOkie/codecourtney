@@ -10,21 +10,22 @@
 </head>
 <body>
 	<div class="wrapper">
-		<div id="mySidenav" class="sidenav">
-  			<div class="closebtn" onclick="closeNav()">&times;
+		<div class="nav">
+			<div id="mySidenav" class="sidenav">
+	  			<div class="closebtn" onclick="closeNav()">&times;
 					<a href="#">About</a>
 					<a href="#">Recipes</a>
 					<a href="#">Special Events</a>
 					<a href="#">Contact</a>
+				</div>
 			</div>
 		</div>
 		
-		<div  class="openbtn" onclick="openNav()"> &#9776;</div>
-
 
 		<div class="heroIMG">
 			<div class="heroIMGwrapper">
-				<img src="https://hd.unsplash.com/photo-1431263154979-0982327fccbb"> 
+				<img src="https://hd.unsplash.com/photo-1457666134378-6b77915bd5f2"> 
+				<div  class="openbtn" onclick="openNav()"> &#9776; </div>
 				<h1>Sweets by Courtney</h1>
 			</div>
 		</div>
@@ -34,12 +35,12 @@
 		<div class="fourEssays">
 			<div id="col">
 				<h2>Our Mission</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				<p>We strive to create unique sweets for your special day. Our ingredients are locally sourced and we often use flavors of the Pacific Northwest for inspiration. From wedding cakes to extravagant birthday bash, we're here to make you a masterpiece. </p>
 				<a href="www.google.com">Find Out More Here</a>
 			</div>
 			<div id="col">
 				<h2>Weddings &amp; Special Events</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				<p>Have a wedding cake or specialty dessert bar designed especially for your event. Sweets by Courtney is here to provide a unique design with a delightful taste to celebrate any occasion. </p>
 				<a href="www.google.com">Plan Your Special Day</a>
 			</div>
 		</div>
@@ -69,39 +70,44 @@
 				<a href="https://www.instagram.com/sweetsbycourtney/">#sweetsbycourtney</a>
 			</div>
 		</div>
-		
+		<div class="orderIMG">
+			<div class="orderIMGwrapper">
+				<img src="https://static.pexels.com/photos/6679/hands-summer-party-colorful.jpg"> 
+				<h2>Make Your Special Day Even Sweeter</h2>
+				<a href="https://www.instagram.com/sweetsbycourtney/">Order Here</a>
+			</div>
 		</div>
 		
 			<div class = "game">
-					<h2 class="gameheading">Play "Pusheen loves cake!"</h2>
+				<h2 class="gameheading">Play "Pusheen loves cake!"</h2>
 				<div class="gameboard">
-					
 				</div>
 				<p id="directions">Directions: Use the arrow keys to help Pusheen eat the cake!</p>
 			</div>
+
 		<footer class="footer">
 			<div class="footercol">
-			<h2>Locations</h2>
-			<p>0000 Main St., Seattle, WA 98119</p>
-			<p>Dubai Mall, 3rd Floor, Dubai, U.A.E.</p>
-			<p></p>
+				<h2>Locations</h2>
+				<a href="https://www.google.com/maps/@47.6398395,-122.3643907,17z">0000 Main St., Seattle, WA 98119</a>
+				<a href="https://www.google.com/maps/@25.1985658,55.2774143,17z">Dubai Mall, 3rd Floor, Dubai, U.A.E.</a>
 			</div>
 			<div class="footercol">
-			<h2>Hours</h2>
-			<p>Sunday - Saturday </p>
-			<p>9AM - 6PM</p>
+				<h2>Hours</h2>
+				<p>Sunday - Saturday </p>
+				<p>9AM - 6PM</p>
 			</div>	
 			<div class="footercol">
-			<h2>Contact Us</h2>
-			<input type="text" name="E-mail">
-			<input type="text-box" name="Comments">
-			<button>Submit</button>
+				<h2>Contact Us</h2>		
+				<form method=POST action="mailto:courtney.beauchene@gmail.com" ENCTYPE="text/plain">
+					<input type="text" name="email" placeholder="E-mail">
+					<textarea rows="4" cols="50" placeholder="Comments"></textarea>
+					<input name="redirect" type="hidden" value="index.html">
+					<input type="submit" value="Send Email">
+				</form>
 			</div>
-			
-
 		</footer>
 
-
 	</div>
+
 </body>
 </html>

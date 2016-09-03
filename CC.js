@@ -4,14 +4,14 @@ $(document).ready(function(){
 })
 
 
-var PAC = 'pacman',
+var CAT = 'cat',
     COI = 'coin',
     EMP = 'empty',
     BRK = 'brick';
 
 var gameboard = [
   [BRK, BRK, BRK, BRK, BRK, BRK, BRK, BRK, BRK, BRK, BRK, BRK, BRK, BRK, BRK],
-  [BRK, PAC, COI, COI, COI, COI, COI, COI, COI, COI, COI, COI, BRK, COI, BRK],
+  [BRK, CAT, COI, COI, COI, COI, COI, COI, COI, COI, COI, COI, BRK, COI, BRK],
   [BRK, COI, COI, COI, COI, BRK, BRK, BRK, BRK, COI, COI, COI, BRK, COI, BRK],
   [BRK, BRK, BRK, BRK, COI, BRK, COI, COI, BRK, BRK, BRK, COI, COI, COI, BRK],
   [BRK, COI, COI, BRK, COI, BRK, COI, COI, BRK, COI, BRK, COI, BRK, COI, BRK],
@@ -22,42 +22,42 @@ var gameboard = [
   [BRK, BRK, BRK, BRK, BRK, BRK, BRK, BRK, BRK, BRK, BRK, BRK, BRK, BRK, BRK],
 ]
 
-var pacmanLocation = {
+var catLocation = {
   x: 1,
   y: 1
 }
 
 function keyPress(keystrokeEvent){
 
-  // gameboard[pacmanLocation.y][pacmanLocation.x] = EMP;
-  var newPacManLocation = {
-    x: pacmanLocation.x,
-    y: pacmanLocation.y
+  // gameboard[catLocation.y][catLocation.x] = EMP;
+  var newCatLocation = {
+    x: catLocation.x,
+    y: catLocation.y
   }
 
   switch (keystrokeEvent.key) {
     case "ArrowDown":
-      newPacManLocation.y += 1;
+      newCatLocation.y += 1;
       break;
     case "ArrowUp":
-      newPacManLocation.y -= 1;
+      newCatLocation.y -= 1;
       break;
     case "ArrowRight":
-      newPacManLocation.x += 1;
+      newCatLocation.x += 1;
       break;
     case "ArrowLeft":
-      newPacManLocation.x -= 1;
+      newCatLocation.x -= 1;
       break;
     default:
       console.log("Non-arrow key pressed...")
   }
 
-  if (gameboard[newPacManLocation.y][newPacManLocation.x] === BRK) {
+  if (gameboard[newCatLocation.y][newCatLocation.x] === BRK) {
     return;
   } else {
-    gameboard[pacmanLocation.y][pacmanLocation.x] = EMP;
-    pacmanLocation = newPacManLocation
-    gameboard[pacmanLocation.y][pacmanLocation.x] = PAC;
+    gameboard[catLocation.y][catLocation.x] = EMP;
+    catLocation = newCatLocation
+    gameboard[catLocation.y][catLocation.x] = CAT;
   }
 
 
